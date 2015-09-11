@@ -25,7 +25,7 @@ public class SerializableLocation implements Serializable {
         this.pitch = location.getPitch();
         this.yaw = location.getYaw();
         worldID = location.getWorld().getUID();
-        Bukkit.getLogger().info("Saved location: " + x + " y: " + y + "z: " + z);
+        //Bukkit.getLogger().info("Saved location: " + x + " y: " + y + "z: " + z);
     }
 
     public Location toLocation() {

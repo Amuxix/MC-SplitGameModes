@@ -34,12 +34,12 @@ public class SplitGamemodes extends JavaPlugin implements Listener {
     }
 
     private void loadMap() {
-        File energyDataFile = new File(getDataFolder(), FILE_NAME);
-        if (energyDataFile.exists() == false) {
+        File infoMap = new File(getDataFolder(), FILE_NAME);
+        if (infoMap.exists() == false) {
             return;
         }
         try {
-            FileInputStream fileInputStream = new FileInputStream(energyDataFile);
+            FileInputStream fileInputStream = new FileInputStream(infoMap);
             ObjectInputStream in = new ObjectInputStream(fileInputStream) {
                 @Override
                 protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {
